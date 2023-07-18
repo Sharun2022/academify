@@ -14,6 +14,14 @@ def home():
     return render_template("home.html", user=current_user, posts=posts)
 
 
+@views.route("/")
+@views.route("/subjects")
+@login_required
+def subjects():
+    return render_template("subjects.html", user=current_user)
+
+
+
 @views.route("/create-post", methods=['GET', 'POST'])
 @login_required
 def create_post():

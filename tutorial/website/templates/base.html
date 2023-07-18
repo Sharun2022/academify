@@ -17,10 +17,9 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
       <div class="container-fluid">
-        <a href="https://imgbb.com/">
-          <img src="https://i.ibb.co/kgqNR9v/Academify.png" alt="Academify" border="0"></a><br />
+          <img src="images/academifyy.jpg">
         <button
           class="navbar-toggler"
           type="button"
@@ -34,6 +33,7 @@
             <a class="nav-item nav-link" href="/home">Home Page</a>
             {% if user.is_authenticated %}
             <a class="nav-item nav-link" href="/logout">Logout</a>
+            <a class="nav-item nav-link" href="/subjects">Subjects</a>
             {% else %}
             <a class="nav-item nav-link" href="/login">Login</a>
             <a class="nav-item nav-link" href="/sign-up">Sign Up</a>
